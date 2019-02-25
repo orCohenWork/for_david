@@ -1,0 +1,209 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Feb 20 11:45:29 2019",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "ipfsentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "testentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "field1",
+                    "type": "uint64"
+                },
+                {
+                    "name": "field2",
+                    "type": "bytes"
+                },
+                {
+                    "name": "field3",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "testget",
+            "base": "",
+            "fields": [
+                {
+                    "name": "uri",
+                    "type": "string"
+                },
+                {
+                    "name": "expectedfield",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "testset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "data",
+                    "type": "testentry"
+                }
+            ]
+        },
+        {
+            "name": "xcleanup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xcommit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xsignal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "action",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "signalRawData",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xwarmup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "testget",
+            "type": "testget",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "testset",
+            "type": "testset",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xcleanup",
+            "type": "xcleanup",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xcommit",
+            "type": "xcommit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xsignal",
+            "type": "xsignal",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xwarmup",
+            "type": "xwarmup",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "ipfsentry",
+            "type": "ipfsentry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "testentry",
+            "type": "testentry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}

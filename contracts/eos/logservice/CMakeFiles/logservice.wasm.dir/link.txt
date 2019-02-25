@@ -1,0 +1,1 @@
+/usr/local/eosio.cdt/bin/eosio-ld  CMakeFiles/logservice.wasm.dir/logservice.cpp.o -o logservice.wasm 

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/contracts/dappservices",
+  "command": "/usr/local/eosio.cdt/bin/eosio-cpp     -O3    -abigen -abigen_output=/contracts/dappservices/dappservices.abi -contract dappservices -o CMakeFiles/dappservices.wasm.dir/dappservices.cpp.o -c /contracts/dappservices/dappservices.cpp",
+  "file": "/contracts/dappservices/dappservices.cpp"
+},
+{
+  "directory": "/contracts/logservice",
+  "command": "/usr/local/eosio.cdt/bin/eosio-cpp     -O3    -o CMakeFiles/logservice.wasm.dir/logservice.cpp.o -c /contracts/logservice/logservice.cpp",
+  "file": "/contracts/logservice/logservice.cpp"
+},
+{
+  "directory": "/contracts/logconsumer",
+  "command": "/usr/local/eosio.cdt/bin/eosio-cpp     -O3    -abigen -abigen_output=/contracts/logconsumer/logconsumer.abi -contract logconsumer -o CMakeFiles/logconsumer.wasm.dir/logconsumer.cpp.o -c /contracts/logconsumer/logconsumer.cpp",
+  "file": "/contracts/logconsumer/logconsumer.cpp"
+},
+{
+  "directory": "/contracts/ipfsservice",
+  "command": "/usr/local/eosio.cdt/bin/eosio-cpp     -O3    -o CMakeFiles/ipfsservice.wasm.dir/ipfsservice.cpp.o -c /contracts/ipfsservice/ipfsservice.cpp",
+  "file": "/contracts/ipfsservice/ipfsservice.cpp"
+},
+{
+  "directory": "/contracts/ipfsconsumer",
+  "command": "/usr/local/eosio.cdt/bin/eosio-cpp     -O3    -abigen -abigen_output=/contracts/ipfsconsumer/ipfsconsumer.abi -contract ipfsconsumer -o CMakeFiles/ipfsconsumer.wasm.dir/ipfsconsumer.cpp.o -c /contracts/ipfsconsumer/ipfsconsumer.cpp",
+  "file": "/contracts/ipfsconsumer/ipfsconsumer.cpp"
+},
+{
+  "directory": "/contracts/coldtoken",
+  "command": "/usr/local/eosio.cdt/bin/eosio-cpp     -O3    -abigen -abigen_output=/contracts/coldtoken/coldtoken.abi -contract coldtoken -o CMakeFiles/coldtoken.wasm.dir/coldtoken.cpp.o -c /contracts/coldtoken/coldtoken.cpp",
+  "file": "/contracts/coldtoken/coldtoken.cpp"
+}
+]

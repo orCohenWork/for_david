@@ -1,0 +1,1 @@
+/usr/local/eosio.cdt/bin/eosio-ld  CMakeFiles/ipfsservice.wasm.dir/ipfsservice.cpp.o -o ipfsservice.wasm 

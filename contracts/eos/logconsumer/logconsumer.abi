@@ -1,0 +1,112 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Feb 20 11:45:20 2019",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "test",
+            "base": "",
+            "fields": [
+                {
+                    "name": "num",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "xlogclear",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reciept",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xlogevent",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reciept",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xsignal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "action",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "signalRawData",
+                    "type": "bytes"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "test",
+            "type": "test",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xlogclear",
+            "type": "xlogclear",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xlogevent",
+            "type": "xlogevent",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xsignal",
+            "type": "xsignal",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}

@@ -1,0 +1,623 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Feb 20 11:45:11 2019",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "accountext",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "quota",
+                    "type": "asset"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "last_usage",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_reward",
+                    "type": "uint64"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "pending_package",
+                    "type": "name"
+                },
+                {
+                    "name": "package_started",
+                    "type": "uint64"
+                },
+                {
+                    "name": "package_end",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "claimrewards",
+            "base": "",
+            "fields": [
+                {
+                    "name": "provider",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol_code"
+                }
+            ]
+        },
+        {
+            "name": "closeprv",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "maximum_supply_amount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "inflation_per_block",
+                    "type": "float64"
+                },
+                {
+                    "name": "inflation_starts_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats_ext",
+            "base": "",
+            "fields": [
+                {
+                    "name": "staked",
+                    "type": "asset"
+                },
+                {
+                    "name": "inflation_per_block",
+                    "type": "float64"
+                },
+                {
+                    "name": "last_inflation_ts",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "issue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "open",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol_code"
+                },
+                {
+                    "name": "ram_payer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "package",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "api_endpoint",
+                    "type": "string"
+                },
+                {
+                    "name": "package_json_uri",
+                    "type": "string"
+                },
+                {
+                    "name": "package_id",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "quota",
+                    "type": "asset"
+                },
+                {
+                    "name": "package_period",
+                    "type": "uint32"
+                },
+                {
+                    "name": "min_stake_quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "min_unstake_period",
+                    "type": "uint32"
+                },
+                {
+                    "name": "enabled",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "refund",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "symcode",
+                    "type": "symbol_code"
+                }
+            ]
+        },
+        {
+            "name": "refundreq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "unstake_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "regpkg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "newpackage",
+                    "type": "package"
+                }
+            ]
+        },
+        {
+            "name": "retire",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "reward",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "last_usage",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "selectpkg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "stake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "unstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "usage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "usage_report",
+                    "type": "usage_t"
+                }
+            ]
+        },
+        {
+            "name": "usage_t",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "payer",
+                    "type": "name"
+                },
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "success",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "xsignal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "action",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "signalRawData",
+                    "type": "bytes"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "claimrewards",
+            "type": "claimrewards",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "closeprv",
+            "type": "closeprv",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issue",
+            "type": "issue",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "open",
+            "type": "open",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "refund",
+            "type": "refund",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "regpkg",
+            "type": "regpkg",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "retire",
+            "type": "retire",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "selectpkg",
+            "type": "selectpkg",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "stake",
+            "type": "stake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unstake",
+            "type": "unstake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "usage",
+            "type": "usage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xsignal",
+            "type": "xsignal",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accountext",
+            "type": "accountext",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "package",
+            "type": "package",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "refundreq",
+            "type": "refundreq",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "reward",
+            "type": "reward",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "statext",
+            "type": "currency_stats_ext",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
